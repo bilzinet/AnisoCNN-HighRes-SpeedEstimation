@@ -1,0 +1,85 @@
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/btt1/miniconda3/envs/tf-gpu/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/btt1/miniconda3/envs/tf-gpu/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/btt1/miniconda3/envs/tf-gpu/lib/python3.7/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-09-17 15:54:17.359163: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-09-17 15:54:17.423631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:86:00.0
+2020-09-17 15:54:17.425411: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-09-17 15:54:17.439906: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-09-17 15:54:17.445933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-09-17 15:54:17.448494: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-09-17 15:54:17.460464: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-09-17 15:54:17.468901: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-09-17 15:54:17.505174: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-09-17 15:54:17.507168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-09-17 15:54:17.507851: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-09-17 15:54:17.518241: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2393855000 Hz
+2020-09-17 15:54:17.518384: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2aeaa3e49700 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-09-17 15:54:17.518519: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-09-17 15:54:17.519807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:86:00.0
+2020-09-17 15:54:17.519864: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-09-17 15:54:17.519891: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-09-17 15:54:17.519916: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-09-17 15:54:17.519940: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-09-17 15:54:17.519963: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-09-17 15:54:17.519987: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-09-17 15:54:17.520036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-09-17 15:54:17.521837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-09-17 15:54:17.522060: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-09-17 15:54:17.963514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-09-17 15:54:17.963629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-09-17 15:54:17.963654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-09-17 15:54:17.966925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30458 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2020-09-17 15:54:17.969386: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2aeae2b00990 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-09-17 15:54:17.969441: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-PCIE-32GB, Compute Capability 7.0
+WARNING:tensorflow:From /home/btt1/miniconda3/envs/tf-gpu/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-09-17 15:54:20.107321: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-09-17 15:54:21.770969: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-09-17 15:54:21.798566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Model: "model_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 80, 60, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 80, 60, 8)         1184      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 40, 20, 8)         0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 40, 20, 32)        12576     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 20, 10, 32)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 20, 10, 64)        51264     
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 10, 5, 64)         0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 10, 5, 64)         102464    
+_________________________________________________________________
+up_sampling2d_1 (UpSampling2 (None, 20, 10, 64)        0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 20, 10, 32)        100384    
+_________________________________________________________________
+up_sampling2d_2 (UpSampling2 (None, 40, 20, 32)        0         
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 40, 20, 8)         12552     
+_________________________________________________________________
+up_sampling2d_3 (UpSampling2 (None, 80, 60, 8)         0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 80, 60, 1)         393       
+=================================================================
+Total params: 280,817
+Trainable params: 280,817
+Non-trainable params: 0
+_________________________________________________________________
